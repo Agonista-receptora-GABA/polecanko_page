@@ -1,0 +1,186 @@
+/* 🌻 Reset podstawowy */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🌻 Header – nawigacja */
+nav {
+  background-color: #FFC107; /* Słonecznikowy żółty */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #e0a800; /* Ciemniejszy żółty */
+  color: #fff;
+}
+
+main {
+  padding: 24px 16px 8px;
+}
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+section p:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #FFC107;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #FFC107;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #e0a800;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #222;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #828282;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #222;
+  border: 2px solid #FFC107;
+}
+
+.btn-secondary:hover {
+  background-color: #FFC107;
+  color: #222;
+  transform: translateY(-2px);
+}
+
+.cta-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  counter-reset: rank;
+}
+.ranking-list li {
+  counter-increment: rank;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+}
+.ranking-list li::before {
+  content: counter(rank) ".";
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffcc00;
+  margin-right: 12px;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+.sr-only:active,
+.sr-only:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
