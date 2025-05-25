@@ -1,221 +1,467 @@
 <!DOCTYPE html>
-<html lang="pl" dir="ltr">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-335F920F0J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-335F920F0J', {
-      storage: 'none'
-    });
-  </script>
-
-  <meta charset="UTF-8">
-
-  <meta name="description" content="Polecanko to katalog najlepszych restauracji w Warszawie. Sprawdź polecane miejsca i dodaj swoją opinię!">
-  <meta name="robots" content="index, follow">
-  <link rel="author" href="https://github.com/didnotwant">
-  <link rel="canonical" href="https://polecanko.pl">
-
-  <meta property="url" content="https://polecanko.pl">
-  <meta name="keywords" content="najlepsze restauracje Warszawa, jedzenie na mieście, gdzie zjeść, recenzje restauracji, opinie o knajpach, wegańskie jedzenie, najlepsze burgery, gdzie zjeść dobry ramen, ranking restauracji">
-
-  <meta name="dcterms.title" content="Polecanko - Najlepsze restauracje w Twoim mieście">
-  <meta name="dcterms.description" content="Katalog najlepszych restauracji w Warszawie. Sprawdź polecane miejsca i dodaj swoją opinię!">
-  <meta name="dcterms.subject" content="restauracje, jedzenie, recenzje, opinie, jedzenie wegańskie, kuchnia japońska, kuchnia polska, Warszawa">
-  <meta name="dcterms.language" content="pl">
-
-  <meta name="application-name" content="Polecanko">
-  <meta name="msapplication-tooltip" content="Najlepsze restauracje w Warszawie">
-  <meta name="msapplication-starturl" content="http://polecanko.pl">
-  <meta name="msapplication-window" content="width=1024;height=768">
-
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Polecanko - Najlepsze restauracje w Twoim mieście">
-  <meta property="og:url" content="https://polecanko.pl">
-  <meta property="og:title" content="Mapa restauracji | Polecanko - Najlepsze restauracje w Warszawie">
-  <meta property="og:image" content="https://polecanko.pl/images/favicon.png">
-
-  <link rel="icon" href="/images/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-  <link rel="stylesheet" href="/css/style.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Mapa restauracji | Polecanko - Najlepsze restauracje w Warszawie</title>
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Polecanko - Najlepsze restauracje w Warszawie",
-      "description": "Ranking najlepszych restauracji w Warszawie. Sprawdź polecane miejsca i dodaj swoją opinię!",
-      "url": "https://polecanko.pl",
-      "image": "https://polecanko.pl/images/social-preview.jpg",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://polecanko.pl/search?q={search_term}",
-        "query-input": "required name=search_term"
-      },
-      "mainEntity": {
-        "@type": "ItemList",
-        "name": "Ranking restauracji",
-        "itemListElement": [
-          {
-            "@type": "LocalBusiness",
-            "name": "Willa Biała",
-            "url": "https://polecanko.pl/warszawa/willa-biala.html",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Ludwika Narbutta 10",
-              "addressLocality": "Warszawa",
-              "addressCountry": "PL"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "reviewCount": "844"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": "52.20733194077857",
-              "longitude": "21.02043052737614"
-            }
-          },
-          {
-            "@type": "LocalBusiness",
-            "name": "Akademia",
-            "url": "https://polecanko.pl/warszawa/akademia.html",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Różana 2/61",
-              "addressLocality": "Warszawa",
-              "addressCountry": "PL"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.7",
-              "reviewCount": "1972"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": "52.20366466793848",
-              "longitude": "21.02278393504598"
-            }
-          }
-        ]
+<html lang="pl">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-335F920F0J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    }
-  </script>
+      gtag("js", new Date());
 
-  <script>
-    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-      key: "AIzaSyBdq5uuYYLON-avWudpzcD2d_YNbSmDAm8",
-      v: "weekly",
-    });
-  </script>
-</head>
-<body>
-  <a href="#tresc" class="sr-only">Przejdź do treści</a>
+      gtag("config", "G-335F920F0J", {
+        storage: "none",
+      });
+    </script>
 
-  <header id="naglowek">
-    <nav id="menu">
-      <ul>
-        <li>
-          <a href="/">
-            Mapa restauracji
-          </a>
-        </li>
-      </ul>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Polecanko to katalog najlepszych restauracji w Warszawie. Sprawdź polecane miejsca w aplikacji lub dodaj swoją opinię w restauracji!"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="author" href="https://github.com/didnotwant" />
+    <link rel="canonical" href="https://polecanko.pl" />
+
+    <meta property="url" content="https://polecanko.pl" />
+    <meta
+      name="keywords"
+      content="najlepsze restauracje Warszawa, jedzenie na mieście, gdzie zjeść, recenzje restauracji, opinie o knajpach, wegańskie jedzenie, najlepsze burgery, gdzie zjeść dobry ramen, ranking restauracji"
+    />
+
+    <meta
+      name="dcterms.title"
+      content="Polecanko – Odkrywaj i polecaj restauracje"
+    />
+    <meta
+      name="dcterms.description"
+      content="Katalog najlepszych restauracji w Warszawie. Sprawdź polecane miejsca w aplikacji lub dodaj swoją opinię w restauracji!"
+    />
+    <meta
+      name="dcterms.subject"
+      content="restauracje, jedzenie, recenzje, opinie, jedzenie wegańskie, kuchnia japońska, kuchnia polska, Warszawa"
+    />
+    <meta name="dcterms.language" content="pl" />
+
+    <meta name="application-name" content="Polecanko" />
+    <meta
+      name="msapplication-tooltip"
+      content="Najlepsze restauracje w Twoim mieście"
+    />
+    <meta name="msapplication-starturl" content="http://polecanko.pl" />
+    <meta name="msapplication-window" content="width=1024;height=768" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_name"
+      content="Polecanko - Najlepsze restauracje w Twoim mieście"
+    />
+    <meta property="og:url" content="https://polecanko.pl" />
+    <meta
+      property="og:title"
+      content="Strona główna | Polecanko - Najlepsze restauracje w Twoim mieście"
+    />
+    <meta
+      property="og:image"
+      content="https://polecanko.pl/images/icons/favicon-16x16.png"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Polecanko – Odkrywaj i polecaj restauracje</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" />
+
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <a href="#" class="logo">
+        <img src="/images/logo.svg" width="18" height="24" />
+        Polecanko</a
+      >
+      <div class="nav-links">
+        <a href="#howitworks">Jak to działa?</a>
+        <a href="#faq">Pytania</a>
+        <a href="#pricing">Oferta</a>
+      </div>
     </nav>
-  </header>
+    <header>
+      <img src="/images/logo.svg" width="64" height="80" />
+      <h1>Polecanko</h1>
+      <p>
+        Odkrywaj <strong>sprawdzone restauracje</strong> polecane przez
+        <strong>prawdziwych gości</strong>.
+      </p>
+      <p>Autentyczne opinie, nowe miejsca, realne doświadczenia.</p>
+      <p>Dla odkrywców smaków i właścicieli restauracji.</p>
+      <button
+        class="cta-btn"
+        onclick="document.getElementById('sections').scrollIntoView({behavior:'smooth'})"
+      >
+        Dowiedz się więcej
+      </button>
+    </header>
+    <div class="container" id="sections">
+      <div class="split-sections">
+        <div class="split">
+          <img
+            src="/images/photo-1504674900247-0877df9cc836.jpg"
+            alt="Odkrywca smaków"
+          />
+          <h2>Dla odkrywców nowych smaków</h2>
+          <p>
+            Szukasz miejsc, które naprawdę warto odwiedzić?<br />
+            Zapisz się, by jako pierwszy przetestować Polecanko – aplikację,
+            gdzie znajdziesz tylko sprawdzone restauracje i autentyczne opinie
+            od prawdziwych gości.
+          </p>
+          <ul>
+            <li>Odkrywaj ukryte perełki kulinarne</li>
+            <li>
+              Czytaj opinie tylko od osób, które faktycznie odwiedziły lokal
+            </li>
+            <li>Wygodna mapa i szybki dostęp do recenzji</li>
+          </ul>
+          <div class="responsive-form" id="app-form">
+            <a
+              href="https://forms.gle/USQrgsXbTwtDdzDJ9"
+              class="cta-btn"
+              aria-labelledby="cta-app-signin-caption"
+            >
+              Powiadom mnie o starcie
+            </a>
+            <p class="caption" id="cta-app-signin-caption">
+              Wciśnięcie przycisku otworzy formularz zapisu na testy aplikacji.
+            </p>
+          </div>
+        </div>
+        <div class="split">
+          <img
+            src="/images/photo-1517248135467-4c7edcad34c4.jpg"
+            alt="Właściciel restauracji"
+          />
+          <h2>Dla właścicieli restauracji</h2>
+          <p>
+            Chcesz przyciągnąć nowych gości i budować zaufanie do swojego
+            lokalu?<br />
+            Dołącz do Polecanko i zbieraj autentyczne opinie od prawdziwych
+            klientów za pomocą unikalnych QR kodów.
+          </p>
+          <ul>
+            <li>Prawdziwe recenzje od realnych gości</li>
+            <li>Wyróżnienie na mapie Polecanko</li>
+            <li>Prosta obsługa i szybki start</li>
+          </ul>
+          <div class="responsive-form" id="service-form">
+            <a
+              href="https://forms.gle/tz92Fic48LTTPS757"
+              class="cta-btn"
+              aria-labelledby="cta-service-signin-caption"
+            >
+              Zgłoś swoją restaurację
+            </a>
+            <p class="caption" id="cta-service-signin-caption">
+              Wciśnięcie przycisku otworzy formularz zgłoszeniowy.
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <main id="tresc" tabindex="-1">
-    <h1>Polecanko - Najlepsze restauracje w Warszawie</h1>
-    <p>Sprawdź polecane miejsca i dodaj swoją opinię!</p>
+      <h2 class="section-title" id="howitworks">Jak to działa?</h2>
+      <div class="howitworks">
+        <div class="step">
+          <h3>1. Otwierasz aplikację</h3>
+          <p>Widzisz mapę z polecanymi restauracjami w Twojej okolicy.</p>
+        </div>
+        <div class="step">
+          <h3>2. Czytasz autentyczne opinie</h3>
+          <p>
+            Każda recenzja pochodzi od osoby, która faktycznie odwiedziła
+            restaurację i zeskanowała unikalny QR kod.
+          </p>
+        </div>
+        <div class="step">
+          <h3>3. Wybierasz i rezerwujesz!</h3>
+          <p>
+            Znajdujesz miejsce, które Cię zainteresuje – i rezerwujesz stolik
+            lub po prostu idziesz na pewniaka!
+          </p>
+        </div>
+      </div>
 
-    <section id="mapa">
-      <h2>📍 Restauracje na mapie</h2>
-      <div id="map" style="height: 500px; width: 100%;"></div>
-    </section>
+      <h2 class="section-title" id="faq">Najczęściej zadawane pytania</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-question">Jak działa Polecanko?</button>
+          <div class="faq-answer">
+            Polecanko to aplikacja, która pozwala odkrywać restauracje polecane
+            przez prawdziwych gości. Opinie można dodać tylko po zeskanowaniu
+            unikalnego QR kodu dostępnego w restauracji, co gwarantuje
+            autentyczność recenzji.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Czy mogę korzystać z aplikacji za darmo?
+          </button>
+          <div class="faq-answer">
+            Tak, korzystanie z aplikacji przez użytkowników szukających
+            restauracji będzie darmowe. Restauratorzy płacą jedynie za pakiet
+            startowy i materiały z QR kodami.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Jak restauracja może dołączyć do Polecanko?
+          </button>
+          <div class="faq-answer">
+            Wystarczy wypełnić formularz zgłoszeniowy na stronie. Skontaktujemy
+            się, by przygotować profil restauracji i dostarczyć pakiet startowy
+            z QR kodami.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Na czym polega autentyczność opinii?
+          </button>
+          <div class="faq-answer">
+            Opinie mogą wystawiać tylko osoby, które faktycznie odwiedziły lokal
+            i zeskanowały unikalny kod QR na miejscu. Dzięki temu eliminujemy
+            fałszywe recenzje.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Jakie są korzyści dla restauracji?
+          </button>
+          <div class="faq-answer">
+            Restauracje zyskują wiarygodne opinie, większą widoczność na mapie
+            Polecanko oraz dostęp do panelu z recenzjami i statystykami. To
+            skuteczny sposób na budowanie zaufania i przyciąganie nowych gości.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Czy planujecie wersję na iOS?</button>
+          <div class="faq-answer">
+            Tak, aplikacja na iOS jest w planach i pojawi się po premierze
+            wersji na Androida i web.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Czy mogę zarejestrować kilka lokali?
+          </button>
+          <div class="faq-answer">
+            Oczywiście! Jeśli jesteś właścicielem kilku restauracji, możesz
+            zgłosić każdy lokal osobno i zarządzać nimi z jednego panelu.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Jak wygląda wsparcie techniczne?</button>
+          <div class="faq-answer">
+            W każdym pakiecie zapewniamy wsparcie wdrożeniowe. W pakiecie
+            Premium masz dedykowanego opiekuna, który pomoże na każdym etapie
+            współpracy.
+          </div>
+        </div>
+      </div>
 
-    <section id="lista">
-      <h2>🍽️ Lista polecanych restauracji</h2>
-      <ol class="ranking-list">
-        <li>
-          <a href="warszawa/willa-biala.html">
-            <span>Willa Biała</span> - 
-            <span>
-              Ocena: <span>4.8</span>/5 
-              (na podstawie <span>844</span> recenzji)
-            </span>
-          </a>
-          📍 <span>
-              <span>Ludwika Narbutta 10</span>, 
-              <span>Warszawa</span>
-          </span>
-        </li>
-        <li>
-          <a href="warszawa/akademia.html">
-            <span>Akademia</span> - 
-            <span>
-              Ocena: <span>4.7</span>/5 
-              (na podstawie <span>1972</span> recenzji)
-            </span>
-          </a>
-          📍 <span>
-              <span>Różana 2/61</span>, 
-              <span>Warszawa</span>
-          </span>
-        </li>
-      </ol>
-    </section>
+      <h2 class="section-title" id="pricing">Pakiety ofert dla restauracji</h2>
+      <div class="pricing-table">
+        <div class="pricing-card">
+          <div class="pricing-title">Starter</div>
+          <div class="pricing-price">99 zł</div>
+          <ul class="pricing-features">
+            <li>Podstawowy Profil restauracji w aplikacji</li>
+            <li>100 kart z unikalnymi QR kodami</li>
+            <li>Dostęp do panelu z opiniami</li>
+            <li>Podstawowe statystyki</li>
+            <li>Wsparcie wdrożeniowe</li>
+          </ul>
+          <button class="cta-btn choose-package-btn" data-package="Starter">
+            Wybierz Starter
+          </button>
+        </div>
+        <div class="pricing-card featured">
+          <div class="ribbon">Polecamy</div>
+          <div class="pricing-title">Rozszerzony</div>
+          <div class="pricing-price">249 zł</div>
+          <ul class="pricing-features">
+            <li>Profil restauracji w aplikacji z możliwością personalizacji</li>
+            <li>500 kart z unikalnymi QR kodami</li>
+            <li>Zaawansowane statystyki</li>
+            <li>Wyróżnienie na mapie</li>
+            <li>Wsparcie wdrożeniowe</li>
+          </ul>
+          <button class="cta-btn choose-package-btn" data-package="Rozszerzony">
+            Wybierz Rozszerzony
+          </button>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-title">Premium</div>
+          <div class="pricing-price">499 zł</div>
+          <ul class="pricing-features">
+            <li>Profil i pełna personalizacja</li>
+            <li>1000 kart z unikalnymi QR kodami</li>
+            <li>Możliwość personalizacji kart</li>
+            <li>Wsparcie wdrożeniowe</li>
+            <li>Pierwszeństwo w nowych funkcjach</li>
+          </ul>
+          <button class="cta-btn choose-package-btn" data-package="Premium">
+            Wybierz Premium
+          </button>
+        </div>
+      </div>
+    </div>
 
-    <section id="opinia">
-      <h2>📝 Dodaj swoją rekomendację</h2>
-      <p>Podziel się swoją opinią na temat ulubionej restauracji.</p>
-      <a href="https://forms.gle/K3ipSJjaux2D4otu8" target="_blank" class="btn btn-primary">Dodaj restaurację</a>
-    </section>
-  </main>
+    <!-- Modal -->
+    <div id="thankYouModal" class="modal">
+      <div class="modal-content">
+        <span class="close" title="Zamknij">&times;</span>
+        <div class="modal-header">
+          <h2>Dziękujemy za wybór!</h2>
+        </div>
+        <div class="modal-body">
+          <p>Wybrany pakiet: <strong id="chosen-package"></strong></p>
+          <p>Skontaktujemy się z Tobą wkrótce, aby ustalić szczegóły.</p>
+          <form
+            id="packageInfoForm"
+            action="https://formsubmit.co/kontakt.polecanko@gmail.com"
+            method="POST"
+            style="margin-top: 20px"
+          >
+            <input type="hidden" name="Pakiet" id="packageInput" value="" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nowy wybór pakietu Polecanko"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <label for="user-email">Twój e-mail:</label>
+            <input
+              type="email"
+              id="user-email"
+              name="E-mail"
+              required
+              placeholder="Podaj swój e-mail"
+            />
+            <button type="submit" class="cta-btn" style="margin-top: 12px">
+              Wyślij
+            </button>
+          </form>
+          <div
+            id="form-success"
+            style="display: none; color: green; margin-top: 10px"
+          >
+            Zgłoszenie wysłane! Dziękujemy.
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <footer id="stopka">
-    Copyright &copy; 2025 by <a href="https://github.com/didnotwant" rel="author">Adrian Niechciał</a>
-  </footer>
+    <footer>
+      <div class="footer-links">
+        <a href="#howitworks">Jak to działa?</a>
+        <a href="#faq">FAQ</a>
+        <a href="#pricing">Oferta</a>
+        <a href="mailto:kontakt.polecanko@gmail.com">Kontakt</a>
+      </div>
+      <div class="footer-social">
+        <a
+          class="footer-social__facebook"
+          href="https://www.facebook.com/profile.php?id=61576828856198"
+          aria-label="Zobacz nasz profil na Facebooku"
+          >Profil na Facebooku</a
+        >
+        <a
+          class="footer-social__instagram"
+          href="https://www.instagram.com/polecanko.app/"
+          aria-label="Zobacz nasz profil na Instagramie"
+          >Profil na Instagramie</a
+        >
+      </div>
+      <div class="footer-cta">
+        Dołącz do Polecanko i odkrywaj najlepsze restauracje!
+      </div>
+      <div class="footer-copyright">
+        &copy; 2025 Polecanko. Wszelkie prawa zastrzeżone.
+      </div>
+    </footer>
 
-  <script>
-    let map;
-    async function initMap() {
-      const { Map } = await google.maps.importLibrary("maps");
-      const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 60) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+      document.querySelectorAll(".faq-question").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const item = this.parentElement;
+          item.classList.toggle("active");
+        });
+      });
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", function () {
+          document
+            .querySelectorAll(".nav-links a")
+            .forEach((l) => l.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
 
-      map = new Map(document.getElementById('map'), {
-        mapId: 'afd27e5d4cbb4a86',
-        center: { lat: 52.2298, lng: 21.0122 },
-        zoom: 13
+    <script>
+      const modal = document.getElementById("thankYouModal");
+      const closeBtn = modal.querySelector(".close");
+      const chosenPackage = document.getElementById("chosen-package");
+      const packageInput = document.getElementById("packageInput");
+      const form = document.getElementById("packageInfoForm");
+      const formSuccess = document.getElementById("form-success");
+
+      document.querySelectorAll(".choose-package-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const pkg = this.getAttribute("data-package");
+          chosenPackage.textContent = pkg;
+          packageInput.value = pkg;
+          form.style.display = "";
+          formSuccess.style.display = "none";
+          modal.style.display = "block";
+          document.body.style.overflow = "hidden";
+          setTimeout(() => {
+            form.querySelector('input[type="email"]').focus();
+          }, 300);
+        });
       });
 
-      var markers = [
-      { lat: 52.20733194077857, lng: 21.02043052737614, title: "Willa Biała", url: "warszawa/willa-biala.html" },
-        { lat: 52.20366466793848, lng: 21.02278393504598, title: "Akademia", url: "warszawa/akademia.html" }
-      ];
+      closeBtn.onclick = function () {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      };
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+          document.body.style.overflow = "";
+        }
+      };
 
-      markers.forEach(function(location) {
-        var marker = new AdvancedMarkerElement({
-          map,
-          position: { lat: location.lat, lng: location.lng },
-          title: location.title
-        });
-
-        marker.addListener("gmp-click", function() {
-          window.location.href = location.url;
-        });
+      form.addEventListener("submit", function (e) {
+        form.style.display = "none";
+        formSuccess.style.display = "";
       });
-    }
-
-    initMap();
-  </script>
-</body>
+    </script>
+  </body>
 </html>
