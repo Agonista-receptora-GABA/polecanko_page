@@ -635,6 +635,13 @@ footer {
   font-size: 1rem;
   box-sizing: border-box;
 }
+.modal-content .cta-btn {
+  background: var(--primary);
+  color: #fff;
+}
+.modal-content .cta-btn:hover {
+  background: #222;
+}
 @media (max-width: 600px) {
   .modal-content {
     width: 98%;
