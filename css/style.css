@@ -19,7 +19,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   background: var(--bg);
   margin: 0;
   color: var(--secondary);
@@ -36,7 +36,10 @@ body {
   padding: 0 40px;
   height: var(--navbar-height);
   background: rgba(255, 255, 255, 0.08);
-  transition: background 0.4s, box-shadow 0.4s, backdrop-filter 0.4s,
+  transition:
+    background 0.4s,
+    box-shadow 0.4s,
+    backdrop-filter 0.4s,
     height 0.3s;
   backdrop-filter: blur(0px);
 }
@@ -72,7 +75,10 @@ body {
   font-size: 1.08rem;
   padding: 4px 2px;
   border-radius: 6px;
-  transition: background 0.2s, color 0.2s, font-size 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    font-size 0.2s;
   background: transparent;
   white-space: nowrap;
 }
@@ -121,6 +127,9 @@ header p:first-of-type {
   font-size: 1.55rem;
   margin-bottom: 28px;
 }
+button {
+  font-family: inherit;
+}
 .cta-btn {
   background: #fff;
   color: var(--primary);
@@ -131,7 +140,9 @@ header p:first-of-type {
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
   margin-top: 10px;
 }
 .cta-btn:hover {
@@ -240,7 +251,9 @@ header p:first-of-type {
   color: #fff;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
   margin-top: 0;
 }
 .responsive-form .cta-btn:hover {
@@ -313,7 +326,9 @@ header p:first-of-type {
   color: var(--secondary);
   font-size: 1rem;
   padding: 0 24px;
-  transition: max-height 0.4s ease, padding 0.2s;
+  transition:
+    max-height 0.4s ease,
+    padding 0.2s;
 }
 .faq-item.active .faq-answer {
   max-height: 400px;

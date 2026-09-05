@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -94,6 +94,7 @@
     <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" />
 
     <link rel="manifest" href="/site.webmanifest" />
+    <link href="/fonts/faces.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -119,7 +120,11 @@
       <p>Dla odkrywców smaków i właścicieli restauracji.</p>
       <button
         class="cta-btn"
-        onclick="document.getElementById('sections').scrollIntoView({behavior:'smooth'})"
+        onclick="
+          document
+            .getElementById('sections')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
       >
         Dowiedz się więcej
       </button>
