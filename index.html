@@ -35,7 +35,7 @@
 
     <meta
       name="dcterms.title"
-      content="Polecanko – Odkrywaj i polecaj restauracje"
+      content="Polecanko - Odkrywaj i polecaj restauracje"
     />
     <meta
       name="dcterms.description"
@@ -83,7 +83,7 @@
       media="(prefers-color-scheme: dark)"
     />
 
-    <title>Polecanko – Odkrywaj i polecaj restauracje</title>
+    <title>Polecanko - Odkrywaj i polecaj restauracje</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap"
@@ -111,13 +111,13 @@
     </nav>
     <header>
       <img src="/images/logo.svg" width="64" height="80" />
-      <h1>Polecanko</h1>
+      <h1>Ile razy zawiodło Cię 5 gwiazdek?</h1>
+      <p>My też mieliśmy dość.</p>
       <p>
-        Odkrywaj <strong>sprawdzone restauracje</strong> polecane przez
-        <strong>prawdziwych gości</strong>.
+        Dlatego w Polecanko każda opinia pochodzi od kogoś, kto faktycznie tam
+        zjadł.<br />
+        Bez kupionych opinii. Bez zgadywania, czy warto.
       </p>
-      <p>Autentyczne opinie, nowe miejsca, realne doświadczenia.</p>
-      <p>Dla odkrywców smaków i właścicieli restauracji.</p>
       <button
         class="cta-btn"
         onclick="
@@ -126,40 +126,46 @@
             .scrollIntoView({ behavior: 'smooth' })
         "
       >
-        Dowiedz się więcej
+        Sprawdzam, czy to dla mnie
       </button>
     </header>
     <div class="container" id="sections">
+      <h2 class="section-title" id="howitworks">
+        Polecanko jest dla Ciebie, jeśli
+      </h2>
       <div class="split-sections">
         <div class="split">
           <img
             src="/images/photo-1504674900247-0877df9cc836.jpg"
             alt="Odkrywca smaków"
           />
-          <h2>Dla odkrywców nowych smaków</h2>
+          <h2>Lubisz dobrze zjeść</h2>
           <p>
-            Szukasz miejsc, które naprawdę warto odwiedzić?<br />
-            Zapisz się, by jako pierwszy przetestować Polecanko – aplikację,
-            gdzie znajdziesz tylko sprawdzone restauracje i autentyczne opinie
-            od prawdziwych gości.
+            Zdarzyło Ci się przewijać dziesiątki opinii i wciąż nie wiedzieć,
+            czy warto tam iść?<br />
+            Jedna brzmi jak wygładzony tekst, druga to samo "spoko", a reszta
+            zlewa się w jedno.<br />
+            W Polecanko liczy się jakość, nie ilość: każda opinia pochodzi od
+            gościa, który faktycznie tam był.
           </p>
           <ul>
-            <li>Odkrywaj ukryte perełki kulinarne</li>
+            <li>Wybieraj miejsca sprawdzone przez ludzi, nie przez algorytm</li>
             <li>
-              Czytaj opinie tylko od osób, które faktycznie odwiedziły lokal
+              Oszczędź czas: żadnego przekopywania się przez podejrzanie idealne
+              recenzje
             </li>
-            <li>Wygodna mapa i szybki dostęp do recenzji</li>
+            <li>Odkrywaj lokale, o których nie usłyszysz z reklamy</li>
           </ul>
           <div class="responsive-form" id="app-form">
             <a
-              href="https://forms.gle/USQrgsXbTwtDdzDJ9"
+              href="https://app.polecanko.pl"
               class="cta-btn"
               aria-labelledby="cta-app-signin-caption"
             >
-              Powiadom mnie o starcie
+              Sprawdzam aplikację
             </a>
             <p class="caption" id="cta-app-signin-caption">
-              Wciśnięcie przycisku otworzy formularz zapisu na testy aplikacji.
+              Wciśnięcie przycisku otworzy aplikację Polecanko.
             </p>
           </div>
         </div>
@@ -168,17 +174,22 @@
             src="/images/photo-1517248135467-4c7edcad34c4.jpg"
             alt="Właściciel restauracji"
           />
-          <h2>Dla właścicieli restauracji</h2>
+          <h2>Prowadzisz restaurację</h2>
           <p>
-            Chcesz przyciągnąć nowych gości i budować zaufanie do swojego
-            lokalu?<br />
-            Dołącz do Polecanko i zbieraj autentyczne opinie od prawdziwych
-            klientów za pomocą unikalnych QR kodów.
+            Twoje uczciwe opinie mogą ginąć w tłumie podkręconych ocen
+            konkurencji.<br />
+            To podważa zaufanie gości, nawet jeśli Twój lokal naprawdę na nie
+            zasługuje.<br />
+            Dołącz do Polecanko i buduj reputację opartą na opiniach, którym
+            ludzie naprawdę wierzą.
           </p>
           <ul>
-            <li>Prawdziwe recenzje od realnych gości</li>
-            <li>Wyróżnienie na mapie Polecanko</li>
-            <li>Prosta obsługa i szybki start</li>
+            <li>Wyróżnij się wśród lokali z podejrzanie wysokimi ocenami</li>
+            <li>Zbuduj zaufanie, które przekłada się na rezerwacje</li>
+            <li>
+              Zacznij zbierać opinie od razu - wystarczy dołączyć kartę z kodem
+              QR do rachunku
+            </li>
           </ul>
           <div class="responsive-form" id="service-form">
             <a
@@ -186,7 +197,7 @@
               class="cta-btn"
               aria-labelledby="cta-service-signin-caption"
             >
-              Zgłoś swoją restaurację
+              Zgłaszam swoją restaurację
             </a>
             <p class="caption" id="cta-service-signin-caption">
               Wciśnięcie przycisku otworzy formularz zgłoszeniowy.
@@ -195,24 +206,26 @@
         </div>
       </div>
 
-      <h2 class="section-title" id="howitworks">Jak to działa?</h2>
+      <h2 class="section-title" id="howitworks">
+        Trzy kroki do znalezienia <br />Twojego idealnego miejsca
+      </h2>
       <div class="howitworks">
         <div class="step">
-          <h3>1. Otwierasz aplikację</h3>
-          <p>Widzisz mapę z polecanymi restauracjami w Twojej okolicy.</p>
+          <h3>1.<br />Otwórz aplikację Polecanko</h3>
+          <p>Zobaczysz mapę z polecanymi restauracjami w Twojej okolicy.</p>
         </div>
         <div class="step">
-          <h3>2. Czytasz autentyczne opinie</h3>
+          <h3>2.<br />Przeczytaj opinie gości</h3>
           <p>
             Każda recenzja pochodzi od osoby, która faktycznie odwiedziła
-            restaurację i zeskanowała unikalny QR kod.
+            restaurację i zeskanowała unikalny kod QR.
           </p>
         </div>
         <div class="step">
-          <h3>3. Wybierasz i rezerwujesz!</h3>
+          <h3>3.<br />Wybierz swoją restaurację</h3>
           <p>
-            Znajdujesz miejsce, które Cię zainteresuje – i rezerwujesz stolik
-            lub po prostu idziesz na pewniaka!
+            Wybierasz miejsce, wiedząc, że opinie, na których się opierasz, są
+            prawdziwe.
           </p>
         </div>
       </div>
@@ -224,7 +237,7 @@
           <div class="faq-answer">
             Polecanko to aplikacja, która pozwala odkrywać restauracje polecane
             przez prawdziwych gości. Opinie można dodać tylko po zeskanowaniu
-            unikalnego QR kodu dostępnego w restauracji, co gwarantuje
+            unikalnego kodu QR dostępnego w restauracji, co gwarantuje
             autentyczność recenzji.
           </div>
         </div>
@@ -234,8 +247,8 @@
           </button>
           <div class="faq-answer">
             Tak, korzystanie z aplikacji przez użytkowników szukających
-            restauracji będzie darmowe. Restauratorzy płacą jedynie za pakiet
-            startowy i materiały z QR kodami.
+            restauracji jest darmowe. Restauratorzy płacą jedynie za pakiet
+            startowy i materiały z kodami QR.
           </div>
         </div>
         <div class="faq-item">
@@ -245,7 +258,7 @@
           <div class="faq-answer">
             Wystarczy wypełnić formularz zgłoszeniowy na stronie. Skontaktujemy
             się, by przygotować profil restauracji i dostarczyć pakiet startowy
-            z QR kodami.
+            z kodami QR.
           </div>
         </div>
         <div class="faq-item">
@@ -254,8 +267,9 @@
           </button>
           <div class="faq-answer">
             Opinie mogą wystawiać tylko osoby, które faktycznie odwiedziły lokal
-            i zeskanowały unikalny kod QR na miejscu. Dzięki temu eliminujemy
-            fałszywe recenzje.
+            i zeskanowały unikalny kod QR na miejscu. Dzięki temu masz pewność,
+            że każda opinia pochodzi od realnego gościa, a nie przypadkowego
+            wpisu czy podkręconej oceny.
           </div>
         </div>
         <div class="faq-item">
@@ -263,16 +277,10 @@
             Jakie są korzyści dla restauracji?
           </button>
           <div class="faq-answer">
-            Restauracje zyskują wiarygodne opinie, większą widoczność na mapie
-            Polecanko oraz dostęp do panelu z recenzjami i statystykami. To
-            skuteczny sposób na budowanie zaufania i przyciąganie nowych gości.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Czy planujecie wersję na iOS?</button>
-          <div class="faq-answer">
-            Tak, aplikacja na iOS jest w planach i pojawi się po premierze
-            wersji na Androida i web.
+            Restauracje zyskują wiarygodne opinie, widoczność na mapie dla
+            odwiedzających aplikację Polecanko oraz dostęp do panelu z
+            recenzjami i statystykami. To skuteczny sposób na budowanie zaufania
+            i przyciąganie nowych gości.
           </div>
         </div>
         <div class="faq-item">
@@ -294,20 +302,22 @@
         </div>
       </div>
 
-      <h2 class="section-title" id="pricing">Pakiety ofert dla restauracji</h2>
+      <h2 class="section-title" id="pricing">
+        Pakiety korzyści dla restauracji
+      </h2>
       <div class="pricing-table">
         <div class="pricing-card">
           <div class="pricing-title">Starter</div>
           <div class="pricing-price">99 zł</div>
           <ul class="pricing-features">
             <li>Podstawowy Profil restauracji w aplikacji</li>
-            <li>100 kart z unikalnymi QR kodami</li>
+            <li>100 kart z unikalnymi kodami QR</li>
             <li>Dostęp do panelu z opiniami</li>
             <li>Podstawowe statystyki</li>
             <li>Wsparcie wdrożeniowe</li>
           </ul>
           <button class="cta-btn choose-package-btn" data-package="Starter">
-            Wybierz Starter
+            Wybieram Starter
           </button>
         </div>
         <div class="pricing-card featured">
@@ -315,28 +325,36 @@
           <div class="pricing-title">Rozszerzony</div>
           <div class="pricing-price">249 zł</div>
           <ul class="pricing-features">
-            <li>Profil restauracji w aplikacji z możliwością personalizacji</li>
-            <li>500 kart z unikalnymi QR kodami</li>
-            <li>Zaawansowane statystyki</li>
-            <li>Wyróżnienie na mapie</li>
+            <li>
+              Profil restauracji w aplikacji
+              <strong>z możliwością personalizacji</strong>
+            </li>
+            <li>500 kart z unikalnymi kodami QR</li>
+            <li>Dostęp do panelu z opiniami</li>
+            <li><strong>Zaawansowane</strong> statystyki</li>
             <li>Wsparcie wdrożeniowe</li>
           </ul>
           <button class="cta-btn choose-package-btn" data-package="Rozszerzony">
-            Wybierz Rozszerzony
+            Wybieram Rozszerzony
           </button>
         </div>
         <div class="pricing-card">
           <div class="pricing-title">Premium</div>
           <div class="pricing-price">499 zł</div>
           <ul class="pricing-features">
-            <li>Profil i pełna personalizacja</li>
-            <li>1000 kart z unikalnymi QR kodami</li>
-            <li>Możliwość personalizacji kart</li>
+            <li>
+              Profil restauracji w aplikacji
+              <strong>z pełną personalizacją</strong>
+            </li>
+            <li>1000 kart z unikalnymi kodami QR</li>
+            <li>Dostęp do panelu z opiniami</li>
+            <li>Zaawansowane statystyki</li>
             <li>Wsparcie wdrożeniowe</li>
-            <li>Pierwszeństwo w nowych funkcjach</li>
+            <li>Możliwość <strong>personalizacji kart</strong></li>
+            <li><strong>Pierwszeństwo</strong> w nowych funkcjach</li>
           </ul>
           <button class="cta-btn choose-package-btn" data-package="Premium">
-            Wybierz Premium
+            Wybieram Premium
           </button>
         </div>
       </div>
@@ -347,11 +365,11 @@
       <div class="modal-content">
         <span class="close" title="Zamknij">&times;</span>
         <div class="modal-header">
-          <h2>Dziękujemy za wybór!</h2>
+          <h2>Potwierdź swój wybór</h2>
         </div>
         <div class="modal-body">
           <p>Wybrany pakiet: <strong id="chosen-package"></strong></p>
-          <p>Skontaktujemy się z Tobą wkrótce, aby ustalić szczegóły.</p>
+          <p>Potrzebujemy jeszcze Twojego adresu e-mail do kontaktu.</p>
           <form
             id="packageInfoForm"
             action="https://formsubmit.co/kontakt.polecanko@gmail.com"
@@ -373,15 +391,16 @@
               required
               placeholder="Podaj swój e-mail"
             />
-            <button type="submit" class="cta-btn" style="margin-top: 12px">
-              Wyślij
+            <button type="submit" class="cta-btn" style="margin-top: 48px">
+              Zatwierdzam wybór pakietu
             </button>
           </form>
           <div
             id="form-success"
             style="display: none; color: green; margin-top: 10px"
           >
-            Zgłoszenie wysłane! Dziękujemy.
+            Zgłoszenie wysłane! Dziękujemy. Skontaktujemy się z Tobą wkrótce,
+            aby ustalić szczegóły.
           </div>
         </div>
       </div>
